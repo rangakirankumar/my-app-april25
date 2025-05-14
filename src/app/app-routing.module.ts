@@ -11,6 +11,9 @@ import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { HomeComponent } from './home/home.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { YComponent } from './y/y.component';
+import { MailsComponent } from './mails/mails.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -22,8 +25,10 @@ const routes: Routes = [
     {path:'circle',component:CircleComponent},
     {path:'BMI',component:BMIComponent},
     {path:'Home',component:HomeComponent},
-    {path:'Directive',component:DirectivesComponent},
-
+    {path:'Directives',component:DirectivesComponent},
+    {path:'Experience' ,component:ExperienceComponent},
+    {path:'Vehicles',component:YComponent},
+    {path:'Mailings',component:MailsComponent},
     
   ]},
   {path:'**',component:ErrorComponent},

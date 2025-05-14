@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-circle',
@@ -8,3 +8,6 @@ import { Component } from '@angular/core';
 export class CircleComponent {
 
 }
+
+
+

@@ -15,6 +15,11 @@ import { BMIComponent } from './bmi/bmi.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { YComponent } from './y/y.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MailsComponent } from './mails/mails.component';
+
 
 @NgModule({
   declarations: [
@@ -29,12 +34,16 @@ import { DirectivesComponent } from './directives/directives.component';
     CircleComponent,
     BMIComponent,
     HomeComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    ExperienceComponent,
+    YComponent,
+    MailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

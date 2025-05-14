@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./bmi.component.css']
 })
 export class BMIComponent {
+  
 
-}
+
+
+  
+
+  }
+
+
+  
+    
+
+

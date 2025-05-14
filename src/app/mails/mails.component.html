@@ -1,0 +1,27 @@
+<table></table>
+
+<h1>Mailing</h1>
+<thead>
+    <tr>
+        <th>S.No</th>
+        <th>User Id</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Completed</th>
+    </tr>
+</thead>
+<tbody>
+
+    <tr *ngFor="let mailings of mailings; let i=index">
+      <h2 *ngIf="false">Compeleted</h2>
+      <h2 *ngIf="true">Compeleted</h2>
+   
+        <td>{{i+1}}</td>
+        <td>{{mailings}}</td>
+        <td>{{mailings}}</td>
+        <td>{{mailings}}</td>
+        <td>{{mailings}}</td>
+    </tr>
+</tbody>
+
+

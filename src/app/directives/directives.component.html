@@ -1,6 +1,6 @@
 <h1>Directives</h1>
 
-<!-- <h4>{{age}}</h4> -->
+<h4>{{ages}}</h4>
  <h5 *ngFor="let age of ages">{{age}}</h5>
 
  <ol>
@@ -38,4 +38,12 @@
 
  <h2 *ngIf="false">Hello Everyone</h2>
  <h2 *ngIf="true">Welcome to Mohit IT</h2>
+
+
+ <h4>{{today}}</h4>
+ <h4>{{today | date}}</h4>
+ <h4>{{today | date:'dd-MM-dd'}}</h4>
+ <h4>{{today | date:'yyyy-MM-dd'}}</h4>
+ <h4>{{today | date:'hh-mm'}}</h4>
+ <h4>{{today | date:'hh-mm:ss'}}</h4>
 

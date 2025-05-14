@@ -1,0 +1,58 @@
+<h1>Vechiles</h1>
+<input type="text" placeholder="enter text to search" [(ngModel)]="keywords" (keyup)="search()">
+<select [(ngModel)]="column">
+    <option value="Vechiles">Vechile Name</option>
+    <option value="color">Color</option>
+    <option value="Cost">Cost</option>
+    <option value="fuel">Fuel</option>
+    </select>
+    <select [(ngModel)]="order">
+        <option value="asc">Ascending Order</option>
+        <option value="desc">Descending Order</option>
+    </select>
+    <!--pagination -->
+    <select [(ngModel)]="limit">
+     <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40">40</option>
+    </select>
+    <select [(ngModel)]="page">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    </select>
+    <button (click)="pagination()">Pagination</button>
+
+<table class="table table-dark">
+
+</table>
+
+<thead>
+    <tr>
+        <th>Manufacturer</th>
+        <th>Model</th>
+        <th>Type</th>
+        <th>Fuel</th>
+        <th>Color</th>
+        <th>Cost</th>
+        
+    </tr>
+</thead>
+
+<tbody>
+    <tr *ngFor="let y of y ">
+         
+        <!-- <td>{{i+1}}</td> -->
+        <td>{{y.manufacture}}</td>
+        <td>{{y.model}}</td>
+        <td>{{y.type}}</td>
+        <td>{{y.fuel}}</td>
+        <td>{{y.color}}</td>
+        <td></td>
+
+
+    
+      </tr>
+</tbody>
